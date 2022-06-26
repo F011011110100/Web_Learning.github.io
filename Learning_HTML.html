@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE html>编写守则 -->
+<!-- HTML-Hypertext Markup Language(构造网页框架) -->
+<html>
+    <head>
+        <!-- head元素对用户不可见，其中包含面向搜索引擎的搜索关键字keywords、
+        页面描述、CSS样式表和字符编码声明 -->
+        <meta charset="utf-8">
+        <!-- 指定使用UTF-8字符编码，可以包含绝大多数语言字符 -->
+        <title>My test page</title>
+        <!-- title为页面标签标题，在浏览器标签页显示 -->
+        <link href="https://fonts.font.im/css?family=Open+Sans" rel="stylesheet" type="text/css">
+        <link href="styles/Learning_CSS2.css" rel="stylesheet">
+        <!-- 在head部分连接CSS样式，要在head里面定义 -->
+    </head>
+    <body>
+        <p class="editor-note">My <span>love</span> Weixing <strong><em>啦啦啦</em></strong>head pic:)</p>
+        <!-- 嵌套元素 -->
+        <h3>My test image</h3>
+        <img src="images/images2.jpg" alt="My test image">
+        <!-- 空元素：不包含任何内容的元素称为空元素，比如img元素，没有</img>结束标签
+        因为图像元素不需要通过内容来产生效果 -->
+
+        <!-- 无序列表 Unordered List-List ltem(li)-->
+        <ul>
+            <li>first</li>
+            <li>second</li>
+        </ul>
+
+        <!-- 有序列表 Ordered List-->
+        <ol>
+            <li>first</li>
+            <li>second</li>
+        </ol>
+
+        <!-- 超链接anchor锚点
+        https和http的区别：
+        1、https的端口是443，而http的端口是80，且两者的连接方式不同；
+        2、http传输是明文的，而https是用ssl进行加密的，https的安全性更高；
+        3、https是需要申请证书的，而http不需要。 -->
+        <!-- 不能省略http或https
+        href-hypertext reference超文本引用 -->
+        <a href="https://www.mozilla.org/zh-CN/about/manifesto/">Mozilla 宣言</a>
+        <p>不同类型的选择器，参加CSS文档：<a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/CSS_basics">不同的元素选择器</a></p>
+        
+
+        <button>切换用户</button>
+        <!-- 在body部分连接JavaScript -->
+        <script src="scripts/Learning_JS.js" defer></script>
+        <!-- defer作用是文档加载完毕了再执行脚本,
+        这样回避免找不到对象的问题,加上 defer 等于在页面完全载入后再执行 -->
+    </body>
+</html>
