@@ -1,0 +1,48 @@
+/* 在Google Fonts找到的字体，之后的子元素会继承相同的font-size和font-family */
+/* CSS注释符号不可嵌套 */
+html{
+    font-size:10px;
+    font-family:'Open Sans',sans-serif;
+    /* 设置页面整体颜色 */
+    background-color: #90b8dd;
+}
+/* 内边距：padding，上下左右4个属性值 */
+/* 边框：border */
+/* 外边距：margin */
+body{
+    width:600px;
+    /* px像素宽度 */
+    margin:0 auto;
+    /* 第一个值代表元素的上方与下方(这里设置为0)，
+    第二个值代表左边与右边，auto是一个特殊值，水平方向上左右对称 */
+    background-color: #FF9500;
+    padding:0 20px 20px 20px;
+    border:5px solid black;
+    /* 为 body 设置 5 像素的黑色实线边框 */
+}
+h3{
+    font-size: 60px;
+    text-align:center;
+    margin:0;
+    padding:20px 0;
+    color: #00539F;
+    text-shadow:3px 3px 1px black;
+    /* 第一个值设置水平偏移值 —— 即阴影右移的像素数（负值左移）。
+       第二个值设置垂直偏移值 —— 即阴影下移的像素数（负值上移）。
+       第三个值设置阴影的模糊半径 —— 值越大产生的阴影越模糊。
+       第四个值设置阴影的基色。 */
+}
+p,li{
+    font-size: 20px;
+    line-height:2;
+    letter-spacing: 1px;
+}
+img{
+    width:500px;
+    display:block;
+    /* <body>是--块级--元素，意味着它占据了页面的空间并且能够赋予外边距和其他改变间距的值
+    而图片是--内联--元素，不具备块级元素的一些功能，
+    所以为了使图像有外边距，我们必须使用display:block;给予其块级行为 */
+    margin:0 auto;
+    /* 设置了display:block才能使用margin */
+}

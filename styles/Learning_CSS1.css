@@ -1,0 +1,58 @@
+/* Cascading Style Sheet-CSS重叠式样表 */
+/* 设置网页颜色等样式 */
+p,li,h1{
+    color:red;
+    width:500px;
+    border:1px solid black;/*p文本的时候，设置一个黑线框*/
+}
+h3{
+    color:blue;
+    width:250px;
+    background-color: yellow;
+}
+em{
+    color:rebeccapurple;
+}
+/* p为选择器，color为属性，属性加属性值为一个声明，整个结构称为规则集
+color就是html中p文本的属性 */
+/* 可以选择多种类型的元素，逗号分隔，如： */
+p{
+    color:rgb(140, 64, 64);/*3色值*/
+}
+/* p
+选择<p> */
+
+/* ID选择器：每个ID只对应一个元素，一个元素只对应一个ID
+#my-id
+选择<p id="my-id">或<a id="my-id"> */
+
+/*类选择器：一个类可以有多个实例
+.my-class
+选择
+<p class="my-class">和<a class="my-class"> */
+/* 也可以h1,   可以换行
+   .my-class{
+    color:blue;
+ } */
+
+/* 属性选择器
+img[src]
+选择
+<img src="myimage.png">而不是<img> */
+a[href]{
+    color:green;
+}
+
+/* 伪类选择器：特定状态下的特定元素
+a:hover
+仅在鼠标指针悬停在连接上时选择<a> */
+a:hover{
+    color:red;
+}
+p::first-line{
+    color:palevioletred;
+}
+
+/* 以下内容使用子组合器 
+选择作为元素的直接子级的段落：<article> >
+article > p { } */
